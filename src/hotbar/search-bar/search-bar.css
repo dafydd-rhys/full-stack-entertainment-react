@@ -1,0 +1,33 @@
+/* search-bar.css */
+
+.search-bar {
+    margin-top: 7px;
+    height: 40px;
+    width: 450px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: 730px; 
+    margin-right: auto;
+  }
+  
+  .search-bar input {
+    background-color: #0e0e10;
+    width: 100%; /* Adjust the width as needed */
+    height: 35px;
+    color: rgb(180, 180, 180);
+    border: 1px solid gray;
+    padding-left: 10px;
+  }
+  
+  .search-bar button {
+    background-color: #0e0e10;
+    height: 35px;
+    width: 45px;
+    border: 1px solid gray;
+  }
+  
+  .search-bar button img {
+    height: 100%;
+  }
+  
