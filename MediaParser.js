@@ -43,7 +43,7 @@ class MediaParser {
   parseFacebookVideo(URL) {
     const parts = URL.split('/');
     const videoID = parts[parts.length - 1];
-    const page_access = "";
+    const page_access = ""//hidden;
 
     // Make request to Facebook API
     fetch(`https://graph.facebook.com/${videoID}?fields=name&access_token=${page_access}`)
@@ -99,7 +99,7 @@ class MediaParser {
     const regExp = /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#&?]*).*/;
     const match = URL.match(regExp);
     const mediaId = (match && match[7].length === 11) ? match[7] : false;
-    const ytApiKey = "AIzaSyC0I4k2Z9OuQR8_n70YT9tz1XPJYOJ-nXg";
+    const ytApiKey = ""//hidden;
     const request = `https://www.googleapis.com/youtube/v3/videos?part=snippet&id=${mediaId}&key=${ytApiKey}`;
 
     // Make request to YouTube API
